@@ -2,7 +2,7 @@ Installation
 ========
 
 ```
-    git clone git@github.com:lukepolo/dotfiles.git ~/.dotfiles
+    git clone git@github.com:forcecommdev/dotfiles.git ~/.dotfiles
 ```
 
 ```

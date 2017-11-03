@@ -1,7 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="miloshadzic"
+ZSH_THEME="robbyrussell"
 DEFAULT_USER=`whoami`
-plugins=(zsh-nvm laravel5)
+plugins=(zsh-nvm laravel5 composer)
 
 #################################################################
 ### Custom Config

@@ -122,28 +122,32 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | b
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+echo 'install node version manager'
+echo '------------'
 nvm install 8.1.2
 
+echo 'install zsh nvm plugin'
+echo '------------'
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 
-echo 'install yarn'
+echo 'install yarn ...An NPM alternative'
 echo '------------'
 brew install yarn
 
 # install file watch (needed for watching phpunit tests)
-echo 'install onchange'
+echo 'install onchange ...Needed for watching phpunit tests'
 echo '----------------'
 npm install -g onchange
 
-echo 'install bower'
-echo '------------'
-npm install -g bower
+# echo 'install bower'
+# echo '------------'
+# npm install -g bower
 
-echo 'install git-open'
+echo 'install git-open ...A CLI tool to open the repo website in your browser'
 echo '------------'
 npm install -g git-open
 
-echo 'install release-it'
+echo 'install release-it ...A CLI release tool for Git repos and npm packages'
 echo '------------'
 npm install release-it -g
 
@@ -151,22 +155,22 @@ npm install release-it -g
 ### Minio https://minio.io/
 #################################################################
 
-echo 'install minio'
-echo '------------'
-brew install minio/stable/minio
-mkdir /tmp/minio
+# echo 'install minio'
+# echo '------------'
+# brew install minio/stable/minio
+# mkdir /tmp/minio
 
 #################################################################
 ### Docker
 #################################################################
 
-echo 'install docker'
-echo '------------'
-brew install docker docker-machine
-brew services start docker-machine
+# echo 'install docker'
+# echo '------------'
+# brew install docker docker-machine
+# brew services start docker-machine
 
 # create the vm
-docker-machine create -d virtualbox dev
+# docker-machine create -d virtualbox dev
 
 #################################################################
 ### Random
